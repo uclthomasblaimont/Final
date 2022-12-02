@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ordinateurs et accessoires</title>
+</head>
+<body>
+    <div class = container-menu id="top">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="menu-button">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#Ordinateur-portable">Ordinateur portable</a>
+              <a href="#Ordinateur-fixe">Ordinateur fixe</a>
+              <a href="#ecran-pc-fixe">ecran pc fixe</a>
+              <a href="#sourie">Souries</a>
+              <a href="#clavier">Clavier</a>
+              <a href="#chaise">Chaise gaming</a>
+              <a href="#casque">Casque</a>
+            </div>
+
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="menu.ejs">Menu</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="Portefeuille.html">Portefeuille</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="login.ejs">Se connecter</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="Commandes.ejs">Commandes</a>
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search.." style="width:600px;height:40px;">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+          <div class="nav-link-wrapper">
+            <p>Utilisateur</p>
+          </div>
+
+
+        </div>
+
+        <div class="right-side">
+          <div class="shopping-cart">
+            <a href="panier.ejs">
+              <img src="../public/shopping-cart.png" style="width:40px;height:30px;">
+            </a>
+            <div>
+              <b><p>0</p></b>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-ordi-accesoire">
+      <b><p>Ordinateur portable</p></b>
+      <div class="Ordinateur-accesoire-position" id="Ordinateur-portable">
+        /*
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/laptop1.png">
+          <div class="info">
+            <p>SAMSUNG 13.3” Galaxy Book2 Pro Laptop Computer|Windows 11 PRO | 16GB | 256GB,
+              12th Gen Intel® Core™ i5-1240P Processor, Evo Certified, Lightweight, 2022 Model,
+              Silver (NP934XED-KB1US)<br><br><b>1299$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="laptop1" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="laptop1" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+
+        <%-include("product.ejs", {image:"../public/Ordinateurs_et_accessoires/laptop1.png" , description:"SAMSUNG 13.3” Galaxy Book2 Pro Laptop Computer|Windows 11 PRO | 16GB | 256GB, 12th Gen Intel® Core™ i5-1240P Processor, Evo Certified, Lightweight, 2022 Model, Silver (NP934XED-KB1US)",price:"1299$"}) %>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/laptop2.png" >
+          <div class="info">
+            <p>SAMSUNG 14" Galaxy Book2 Business Laptop Computer, i7P / 16GB / 512GB, Windows 11 PRO, 12th Gen Intel vPro 28W Processor
+              w/ Enhanced Security, 2022 Model, ‎NP641BEF-KA2US, Graphite<br><br><b>1599$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="laptop2" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="laptop2" class="button2" value="Procéder au paiment"></a>
+          </div>
+
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/laptop3.png" >
+          <div class="info">
+            <p>2022 Newest Lenovo Ideapad 3 Laptop, 15.6" HD Touchscreen, 11th Gen Intel Core i3-1115G4 Processor, 8GB DDR4 RAM,
+              256GB PCIe NVMe SSD, HDMI, Webcam, Wi-Fi 5, Bluetooth, Windows 11 Home, Almond<br><br><b>374$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="laptop3" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="laptop3" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/laptop4.png" >
+          <div class="info">
+            <p>HP Envy X360 2-in-1 FHD OLED Touch-Screen Laptop | 11th Generation Intel Core i7-1195G7 8GB DDR4 RAM 512GB SSD Backlit Keyboard
+              Fingerprint Windows 11 Home with USB3.0 Bundle Silver 13-13.99 inches<br><br><b>818$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="laptop4" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="laptop4" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+      <b><p>Ordinateur fixe</p></b>
+      <div class="Ordinateur-accesoire-position" id="Ordinateur-fixe">
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/pc-fix1.png" >
+          <div class="info">
+          <p>Gaming PC Desktop Computer by Alarco Intel i5 3.10GHz,8GB Ram,1TB Hard Drive,Windows 10 pro,WiFi Ready,Video
+            Card Nvidia GTX 650 1GB, 3 RGB Fans with Remote
+            <br><br><b>499$</b>
+          </p>
+          <a href="panier.ejs"><input type="submit" name="pc-fixe1" class="button1" value="Ajouter au panier"></a><br>
+          <a href="paiment.html"><input type="submit" name="pc-fixe1" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/pc-fix2.png" >
+          <div class="info">
+            <p>Thermaltake Glacier 360 Liquid-Cooled PC (AMD Ryzen 5 5600X, RTX 3060, 16GB RGB 3600Mhz DDR4 ToughRAM RGB Memory,
+              1TB NVMe M.2, WiFi, Win 10 Home) Gaming Desktop Computer S3WT-B550-G36-LCS<br><br><b>1349$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="pc-fixe2" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="pc-fixe2" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/pc-fix3.png" >
+          <div class="info">
+            <p>Skytech Blaze ll Gaming PC Desktop – Intel i5-10400F, GTX 1660, 1TB NVME, 16G DDR4 3200, AC Wi-Fi, Windows
+              10 Home 64-bit, Black<br><br><b>1000$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="pc-fixe3" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="pc-fixe3" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/pc-fix4.png" >
+          <div class="info">
+            <p>
+              Skytech Blaze 3.0 Gaming PC Desktop – Intel Core i5 12400F 2.5 GHz, RTX 3060, 500GB NVME SSD, 16G DDR4 3200,
+              600W Gold PSU, AC Wi-Fi, Windows 10 Home 64-bit<br><br><b>989$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="pc-fixe4" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="pc-fixe4" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <b><p>Ecran pour pc fixe</p></b>
+      <div class="Ordinateur-accesoire-position" id="ecran-pc-fixe">
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/ecran-pc-fixe1.png" >
+          <div class="info">
+            <p>SAMSUNG 27-Inch CF39 Series FHD 1080p Curved Computer Monitor, Ultra Slim Design, AMD FreeSync, 4ms response,
+              HDMI, DisplayPort, VESA Compatible, Wide Viewing Angle (LC27F398FWNXZA), Black<br><br><b>149$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="ecran-pc-fixe1" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="ecran-pc-fixe1" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/ecran-pc-fixe2.png" >
+          <div class="info">
+            <p>Westinghouse 22" Full HD 1080p LED VA Home Office Computer Monitor, 75Hz Flicker-Free PC Monitor, 22 Inch
+              Monitor with VA Panels, Blue Light Filter, & Warm & Cool Mode Viewing, HDMI & VGA Compatible<br><br><b>99$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="ecran-pc-fixe2" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="ecran-pc-fixe2" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/ecran-pc-fixe3.png" >
+          <div class="info">
+            <p>SAMSUNG 32-inch T55 Series - 1000R Curved Monitor: 75Hz, 4ms, 1080p (LC32T550FDNXZA)<br><br><b>283$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="ecran-pc-fixe3" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="ecran-pc-fixe3" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/ecran-pc-fixe4.png" >
+          <div class="info">
+            <p>ASUS TUF Gaming 32" 1080P Curved Monitor (VG328H1B) - Full HD, 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur,
+              Speaker, Adaptive-Sync, FreeSync Premium, VESA Mountable, HDMI, Tilt Adjustable<br><br><b>259$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="ecran-pc-fixe4" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="ecran-pc-fixe4" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <b><p>Sourie</p></b>
+      <div class="Ordinateur-accesoire-position" id="sourie">
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/sourie1.png" style="width:320px;height:300px;">
+          <div class="info">
+            <p>RAZEAK Ultra Custom Wireless Gaming Mouse Syww 8, Gaming Mouse 3395 Sensor 26000 DPI Triple-Mode (Wired+2.4 G+ BT5.0)
+              Connection- with Software Programmable (White)<br><br><b>70$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="sourie1" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="sourie1" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/sourie2.png" >
+          <div class="info">
+            <p>Gaming Mouse, Redragon Wireless Mouse Gaming with 8000 DPI, PC Gaming Mice with Fire Button, RGB Backlit
+              Programmable Ergonomic Mouse Gamer, Rechargeable, 70Hrs for Windows, Mac Gamer, Black<br><br><b>30$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="sourie2" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="sourie2" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/sourie3.png" >
+          <div class="info">
+            <p>
+              Redragon M710 MEMEANLION Chroma Gaming Mouse, High-Precision Ambidextrous Programmable Gaming Mouse with 7
+              RGB Backlight Modes and Tuning Weights, up to 10000 DPI User Adjustable<br><br><b>14$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="sourie3" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="sourie3" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/sourie4.png" >
+          <div class="info">
+            <p>
+              DGG ST-M6 Gaming Ultra Lightweight Honeycomb Shell Wired RGB Gaming Mouse - Pixart 3327 Up to 12400 DPI |
+              Programmable 6 Buttons - 66g Only (Black)<br><br><b>15$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="sourie4" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="sourie4" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <b><p>Clavier</p></b>
+      <div class="Ordinateur-accesoire-position" id="clavier">
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/clavier1.png" style="width:320px;height:300px;">
+          <div class="info">
+            <p>RaceGT Gaming Keyboard,114 Keys Full Size Wired LED Backlit with Dedicated Multimedia Keys Wrist Rest
+              Mechanical Feeling Keybaord Compatible for Computer PC Laptop Xbox<br><br><b>26$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="clavier1" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="clavier1" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/clavier2.png" >
+          <div class="info">
+            <p>Rechargeable Wireless Keyboard, WisFox USB Ultra Slim Computer Keyboard, Full Size Silent Keyboard for Laptop,
+              Computer and Desktop, Surface, Mac and Windows<br><br><b>15$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="clavier2" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="clavier2" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/clavier3.png" >
+          <div class="info">
+            <p>ROCCAT Vulcan II Max – Optical-Mechanical PC Gaming Keyboard with Customizable RGB Illuminated Keys and Palm Rest, Titan II
+              Smooth Linear Switches, Aluminum Plate, 100M Keystroke Durability – White<br><br><b>229$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="clavier3" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="clavier3" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/clavier4.png" >
+          <div class="info">
+            <p>Snpurdiri 60% Wired Gaming Keyboard, RGB Backlit Ultra-Compact Mini Keyboard, Waterproof Small Compact 61 Keys Keyboard for
+              PC/Mac Gamer, Typist, Travel, Easy to Carry on Business Trip(Black-White)<br><br><b>29$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="clavier4" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="clavier4" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <b><p>Chaise Gaiming</p></b>
+      <div class="Ordinateur-accesoire-position" id="chaise">
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/chaise1.png" style="width:320px;height:300px;">
+          <div class="info">
+            <p>YSSOA Backrest and Seat Height Adjustable Swivel Recliner Racing Office Computer Ergonomic
+              Video Game Chair, Without footrest, Black/White<br><br><b>83$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="chaise1" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="chaise1" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/chaise2.png" >
+          <div class="info">
+            <p>Dowinx Gaming Chair Fabric with Pocket Spring Cushion, Massage Game Chair Cloth with Headrest,
+              Ergonomic Computer Chair with Footrest 290LBS, Grey<br><br><b>189$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="chaise2" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="chaise2" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/chaise3.png">
+          <div class="info">
+            <p>XUER Ergonomic Office Chair, Mesh Computer Desk Chair with Adjustable Sponge Lumbar Support, Thick Cushion,
+              PU Armrest and Headrest, High Back Swivel Home Office Task Chair for Work (Black)<br><br><b>269$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="chaise3" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="chaise3" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/chaise4.png">
+          <div class="info">
+            <p>
+              Dowinx Gaming Chair with Pocket Spring Cushion, Ergonomic Computer Chair High Back, Reclining
+              Massage Game Chair Pu Leather 350LBS, Black<br><br><b>159$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="chaise4" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="chaise4" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <b><p>Casque</p></b>
+      <div class="Ordinateur-accesoire-position" id="casque">
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/casque1.png" style="width:320px;height:300px;">
+          <div class="info">
+            <p>BENGOO G9000 Stereo Gaming Headset for PS4 PC Xbox One PS5 Controller, Noise Cancelling Over Ear Headphones with
+              Mic, LED Light, Bass Surround, Soft Memory Earmuffs for Laptop Mac Nintendo NES Games<br><br><b>24$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="casque1" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="casque1" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/casque2.png" >
+          <div class="info">
+            <p>HyperX Cloud II - Gaming Headset, 7.1 Surround Sound, Memory Foam Ear Pads, Durable Aluminum Frame,
+              Detachable Microphone, Works with PC, PS5, PS4, Xbox Series X|S, Xbox One – Red<br><br><b>45$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="casque2" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="casque2" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/casque3.png" >
+          <div class="info">
+            <p>Logitech G335 Wired Gaming Headset, with Flip to Mute Microphone, 3.5mm Audio Jack, Memory Foam Earpads, Lightweight,
+              Compatible with PC, PlayStation, Xbox, Nintendo Switch – Black<br><br><b>141$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="casque3" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="casque3" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+        <div class="products">
+          <img src="../public/Ordinateurs_et_accessoires/casque4.png" >
+          <div class="info">
+            <p>Razer BlackShark V2 X Gaming Headset: 7.1 Surround Sound - 50mm Drivers - Memory Foam Cushion - for PC, PS4,
+              PS5, Switch, Xbox One, Xbox Series X|S, Mobile - 3.5mm Audio Jack - Black<br><br><b>50$</b>
+            </p>
+            <a href="panier.ejs"><input type="submit" name="casque4" class="button1" value="Ajouter au panier"></a><br>
+            <a href="paiment.html"><input type="submit" name="casque4" class="button2" value="Procéder au paiment"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+<script>
+
+  /*https://www.w3schools.com/howto/howto_js_dropdown.asp*/
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("menu-button");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+</script>
+
+</html>
